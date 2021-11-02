@@ -1,7 +1,9 @@
 package it.unibo.oop.lab.collections1;
 
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.LinkedList;
+import java.util.Map;
 import java.util.Set;
 
 /**
@@ -41,12 +43,19 @@ public final class UseCollection {
     		System.out.println(i);
     	}
     	
-    	
     	time = System.nanoTime() - time;
-    	
     	
     	System.out.println("Converting x int to String and inserting them in a Set took " + time
                 + "ns (" + time / 1_000_000 + "ms)");
+    	
+    	Map <String,Long> m1 = new HashMap<>();
+    	
+    	m1.put("Africa", 1_110_635_000L);
+    	m1.put("Americas", 1_110_635_000L);
+    	m1.put("Antarctica", 0L);
+    	m1.put("Asia", 4_298_723_000L);
+    	m1.put("Europe", 742_452_000L);
+    	m1.put("Oceania", 38_304_000L);
     	
         /*
          * 1) Create a new ArrayList<Integer>, and populate it with the numbers

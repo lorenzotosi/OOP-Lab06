@@ -21,6 +21,8 @@ public final class UseCollection {
     	
     	ArrayList<Integer> a1 = new ArrayList<Integer>();
     	
+    	long time = System.nanoTime();
+    	
     	for(int i=1000; i<2000; i++) {
     		a1.add(i);
     	}
@@ -31,8 +33,8 @@ public final class UseCollection {
     	l1.addAll(a1);
     	
     	
-    	int num=a1.get(a1.size());
-    	a1.set(a1.size(), a1.get(0));
+    	int num=a1.get(a1.size()-1);
+    	a1.set(a1.size()-1, a1.get(0));
     	a1.set(0, num);
     	
     	for (Integer i: a1) {
@@ -40,6 +42,11 @@ public final class UseCollection {
     	}
     	
     	
+    	time = System.nanoTime() - time;
+    	
+    	
+    	System.out.println("Converting x int to String and inserting them in a Set took " + time
+                + "ns (" + time / 1_000_000 + "ms)");
     	
         /*
          * 1) Create a new ArrayList<Integer>, and populate it with the numbers

@@ -1,5 +1,9 @@
 package it.unibo.oop.lab.collections1;
 
+import java.util.ArrayList;
+import java.util.LinkedList;
+import java.util.Set;
+
 /**
  * Example class using {@link java.util.List} and {@link java.util.Map}.
  * 
@@ -14,6 +18,29 @@ public final class UseCollection {
      *            unused
      */
     public static void main(final String... s) {
+    	
+    	ArrayList<Integer> a1 = new ArrayList<Integer>();
+    	
+    	for(int i=1000; i<2000; i++) {
+    		a1.add(i);
+    	}
+    	
+    	
+    	LinkedList<Integer> l1 = new LinkedList<>();
+    	
+    	l1.addAll(a1);
+    	
+    	
+    	int num=a1.get(a1.size());
+    	a1.set(a1.size(), a1.get(0));
+    	a1.set(0, num);
+    	
+    	for (Integer i: a1) {
+    		System.out.println(i);
+    	}
+    	
+    	
+    	
         /*
          * 1) Create a new ArrayList<Integer>, and populate it with the numbers
          * from 1000 (included) to 2000 (excluded).

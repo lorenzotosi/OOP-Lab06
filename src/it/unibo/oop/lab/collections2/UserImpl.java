@@ -16,7 +16,7 @@ public class UserImpl implements User {
      * to be "lazily" initialized.
      */
     private int hash;
-
+    
     /**
      * Builds a new UserImpl. An age not specified means that the age field is
      * going to have a value equal to -1.

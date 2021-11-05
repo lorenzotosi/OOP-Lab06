@@ -57,7 +57,7 @@ public class SocialNetworkUserImpl<U extends User> extends UserImpl implements S
     public SocialNetworkUserImpl(final String name, final String surname, final String user, final int userAge) {
         super(name, surname, user, userAge);
     }
-
+    
     /*
      * [METHODS]
      * 
@@ -68,12 +68,12 @@ public class SocialNetworkUserImpl<U extends User> extends UserImpl implements S
     public boolean addFollowedUser(final String circle, final U user) {
         return false;
     }
-
+    
     @Override
     public Collection<U> getFollowedUsersInGroup(final String groupName) {
         return null;
     }
-
+    
     @Override
     public List<U> getFollowedUsers() {
         return null;

@@ -83,5 +83,6 @@ public final class BaseRobotTest {
         r2.recharge();
         // verify battery level
         assertEquals(100, r2.getBatteryLevel(), 0);
+        
     }
 }

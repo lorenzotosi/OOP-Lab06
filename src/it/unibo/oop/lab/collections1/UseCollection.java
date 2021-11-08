@@ -57,6 +57,12 @@ public final class UseCollection {
     	m1.put("Europe", 742_452_000L);
     	m1.put("Oceania", 38_304_000L);
     	
+    	long a =0;
+    	for (long x : m1.values()) {
+    		a+=x;
+    	}
+    	
+    	System.out.println(a);
         /*
          * 1) Create a new ArrayList<Integer>, and populate it with the numbers
          * from 1000 (included) to 2000 (excluded).

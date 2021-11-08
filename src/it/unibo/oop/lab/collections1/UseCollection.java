@@ -20,7 +20,7 @@ public final class UseCollection {
      *            unused
      */
     public static void main(final String... s) {
-    	
+   	
     	ArrayList<Integer> a1 = new ArrayList<Integer>();
     	
     	long time = System.nanoTime();
@@ -63,7 +63,7 @@ public final class UseCollection {
     	}
     	
     	System.out.println(a);
-    	aaa
+    	
         /*
          * 1) Create a new ArrayList<Integer>, and populate it with the numbers
          * from 1000 (included) to 2000 (excluded).

@@ -20,7 +20,7 @@ public final class UseCollection {
      *            unused
      */
     public static void main(final String... s) {
-    	
+   	
     	ArrayList<Integer> a1 = new ArrayList<Integer>();
     	
     	long time = System.nanoTime();
